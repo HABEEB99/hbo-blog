@@ -24,7 +24,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({
 				{description && <meta name="description" content={description} />}
 			</Head>
 			<Header />
-			<main className="mt-[12vh] px-4 md:px-12 lg:px-32 w-screen h-[90vh] scrollbar-hide">
+			<main className="mt-[12vh] px-4 md:px-12 lg:px-32 w-screen min-h-[90vh] py-4 scrollbar-hide">
 				{children}
 			</main>
 			<Footer />

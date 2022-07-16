@@ -4,8 +4,8 @@ export default {
 	type: 'document',
 	fields: [
 		{
-			name: 'title',
-			title: 'Title',
+			name: 'category',
+			title: 'Category',
 			type: 'string',
 		},
 
@@ -13,13 +13,6 @@ export default {
 			name: 'body',
 			title: 'Body',
 			type: 'string',
-		},
-
-		{
-			name: 'category',
-			title: 'Category',
-			type: 'array',
-			of: [{ type: 'string' }],
 		},
 
 		{
@@ -33,7 +26,7 @@ export default {
 			title: 'Slug',
 			type: 'slug',
 			options: {
-				source: 'title',
+				source: 'category',
 				maxLength: 96,
 			},
 		},
