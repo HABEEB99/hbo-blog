@@ -4,8 +4,13 @@ export default {
 	type: 'document',
 	fields: [
 		{
-			name: 'name',
-			title: 'Name',
+			name: 'givenName',
+			title: 'Given Name',
+			type: 'string',
+		},
+		{
+			name: 'fullName',
+			title: 'Full Name',
 			type: 'string',
 		},
 		{
@@ -14,8 +19,8 @@ export default {
 			type: 'string',
 		},
 		{
-			name: 'image',
-			title: 'Image',
+			name: 'picture',
+			title: 'Picture',
 			type: 'string',
 		},
 	],
